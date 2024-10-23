@@ -162,6 +162,7 @@ button:not(.myBut-not) {
 .test-selection {
     margin: 10px 0px 10px 10px;
     width: 30vw;
+    padding: 10px;
 }
 
 .test-selection:has(img) {
@@ -171,8 +172,9 @@ button:not(.myBut-not) {
 
 .test-selection img {
     margin-top: 10px;
-    width: 400px;
+    width: 28vw;
     height: 200px;
+    padding: 10px;
   }
 
 .txt::selection {
