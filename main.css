@@ -1,0 +1,184 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.page {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-size: large; 
+    padding: 10px;
+} 
+
+.myssylka:link {
+    color: white;
+}
+
+.myssylka:visited {
+    color: white;
+}
+
+.myssylka:hover {
+    color: rgb(255, 86, 86);
+}
+
+.myssylka:active { 
+    color: lightblue;
+}
+
+.input {
+    margin: 10px;
+    width: 253px;
+    border: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.myInput {
+    background-color: white;
+    margin: 10px;
+}
+
+.myInput:focus{
+    outline: none;
+    box-shadow: 0 0 25px black;
+    color: rgb(0, 0, 0);
+}
+.input:has(input:invalid) {
+    outline: 2px solid crimson;
+    outline-offset: -2px;
+}
+
+[type=email]:valid {
+    background: rgb(107, 255, 107);
+    opacity: 0.8;
+}
+
+[type=email]:invalid {
+    outline: 2px solid red;
+    outline-offset: -2px;
+    opacity: 0.8;
+}
+
+.knopki {
+    margin-left: 10px;
+}
+
+button:not(.myBut-not) {
+    background-color: darksalmon;
+}
+
+.spisok {
+    margin: 0;
+    padding: 0;
+    margin: 10px 0px 10px 20px;
+    list-style: square;
+}
+
+.tabl {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.tabltd {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.tabltd:nth-child(odd) {
+    background: rgb(222, 84, 84);
+}
+
+.tabltd:nth-child(even) {
+    background: rgb(69, 255, 59);
+}
+
+.tablbody {
+    margin: 10px;
+}
+
+.dekor {
+    margin: 10px;
+    border: 1px solid red;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.citata::before {
+    content: "💔";
+    color: red;
+}
+
+.citata::after {
+    content: '"Три дня дождя"';
+    color: lightgray;
+}
+
+.spisok2 {
+    list-style: outside;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.spisok2:hover:has(a) {
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    margin: 10px 0px 10px 20px;
+    list-style-type: none;
+}
+
+.sylka2 {
+    text-decoration: none;
+}
+
+.sylka2:visited {
+    color: black;
+}
+
+.sylka2:hover {
+    color: aqua;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.sylka2:hover::after {
+    content: " Нажми сюда";
+    text-decoration: underline;
+}
+
+.myNotItem::marker {
+    content: "🔥";
+    color: gold;
+}
+
+.test-selection {
+    margin: 10px 0px 10px 10px;
+    width: 30vw;
+}
+
+.test-selection:has(img) {
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+.test-selection img {
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+  }
+
+.txt::selection {
+    background-color: red;
+    color: aquamarine;
+}
+
+
+
